@@ -1,0 +1,10 @@
+type LoginResult = 
+ variant {
+   err: text;
+   ok: bool;
+ };
+service : {
+  isSessionValid: () -> (bool);
+  login: (text, text) -> (LoginResult);
+  logout: () -> (bool);
+}

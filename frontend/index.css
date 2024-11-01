@@ -1,0 +1,206 @@
+body.wm {
+    font-family: "Open Sans", helvetica, arial, sans-serif;
+    background-color: #f0eff0;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#login-wrapper {
+    margin: 45px auto;
+    min-height: 460px;
+    flex: 1;
+}
+
+.main-logo {
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+#login-container {
+    margin: 0 auto;
+    position: relative;
+    width: 356px;
+}
+
+#login-sub-container {
+    position: relative;
+    width: 345px;
+}
+
+#login-sub-header {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.input-req-login {
+    color: #293a4a;
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 8px;
+    width: 100%;
+}
+
+.input-field-login {
+    display: block;
+    height: 32px;
+    border-radius: 4px;
+    border: 2px solid #bebebe;
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+
+.input-field-login input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0 10px;
+    border-radius: 4px;
+}
+
+.username-container {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QgPDRknv6xydAAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAC5SURBVDjL7ZIxCsJAEEX/RESsFBsLW0HwBsJ6AG9h4RG8hb2Np7ASBEEQthFE0MYj2FjYaKNYuGKykmwQbPzwYXdm/8x/M8A/4Z5OJ0e9XiC5BnAA0PV9f+77/tL3/W0URfuiKCgN8DxvFobhLgzDexiGO8/zZlUQx/GiLEvKr1IURZkkybwMOKXUFcAGwBnAhIi2RVFQmqZbZr4AeL0rcc4tAKyY+QTgaYx5MjOrpmUiIo7j6A3VH+UNobJ/6cvmMHUAAAAASUVORK5CYII=');
+    background-repeat: no-repeat;
+    background-position: 8px center;
+    padding-left: 30px;
+}
+
+.password-container {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QgPDRknv6xydAAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAADASURBVDjL7ZIxDoJAEEX/GhMTY2FhYWLCBUw4gdfw0lzBS3gNb8NvYWJhYWwsLIyJiQkmG3ddWFgSC3/5szsz/5/ZXWA0+gWqetDaUGvzqKqHf4MZEZE5gAuAG4AFET0BXKy1d2vtXUSWAZFHURRzrfVVa30TkZ3WeqaUOgG4WWvJe79SSr2I6FlV1UtEtiLyMMYsyrI8p2l66Pv+LSKLEEJwzq2dc3vn3D7Pc5em6bZpmhP+Bs65NYAEwDdN84V/xBtm4X8+1hqZ7wAAAABJRU5ErkJggg==');
+    background-repeat: no-repeat;
+    background-position: 8px center;
+    padding-left: 30px;
+}
+
+.login-btn button {
+    background-color: #179bd7;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 7px;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-btn button:hover {
+    background-color: #095779;
+}
+
+.login-btn button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#locale-footer {
+    margin: 40px auto;
+    padding: 5px;
+    width: 90%;
+}
+
+.locale-container ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.locale-container ul li {
+    display: inline;
+    list-style: none;
+    margin-left: 34px;
+}
+
+.locale-container ul li:first-child {
+    margin-left: 0;
+}
+
+.locale-container ul li a {
+    color: #293a4a;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.locale-container ul li a:hover {
+    color: #d03f00;
+}
+
+.copyright {
+    color: #3f4143;
+    font-family: verdana;
+    font-size: 7pt;
+    margin: 10px 0;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.copyright a {
+    color: #3f4143;
+    text-decoration: none;
+}
+
+.copyright a:hover {
+    color: #d03f00;
+}
+
+.error-notice {
+    background-color: #d35351;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.success-notice {
+    background-color: #67ba5b;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#loading-spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #179bd7;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 480px) {
+    #login-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #login-sub-container {
+        width: 100%;
+    }
+
+    .input-field-login {
+        width: 100%;
+    }
+}
